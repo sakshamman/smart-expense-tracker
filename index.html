@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Smart Expense Tracker</h1>
+
+    <!-- Balance Section -->
+    <div class="balance">
+      <h2>Your Balance</h2>
+      <h3 id="balance">$0.00</h3>
+    </div>
+
+    <!-- Income and Expense Summary -->
+    <div class="summary">
+      <div>
+        <h4>Income</h4>
+        <p id="income" class="money plus">+$0.00</p>
+      </div>
+      <div>
+        <h4>Expense</h4>
+        <p id="expense" class="money minus">-$0.00</p>
+      </div>
+    </div>
+
+    <!-- Transaction List -->
+    <ul id="transactions" class="transactions">
+      <!-- Transactions will be inserted here -->
+    </ul>
+
+    <!-- Add Transaction Form -->
+    <form id="form">
+      <h3>Add new transaction</h3>
+      <input type="text" id="text" placeholder="Description (e.g. Grocery)">
+      <input type="number" id="amount" placeholder="Amount (+/-)">
+      <button type="submit">Add Transaction</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
